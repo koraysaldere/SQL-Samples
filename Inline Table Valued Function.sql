@@ -14,7 +14,7 @@ as tablename
 
 -- get Func
 
-Select * dbo.GetClients
+Select * From dbo.GetClients
 
 (
     '','','','',''
