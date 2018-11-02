@@ -1,0 +1,13 @@
+USE dbname
+GO
+
+CREATE FUNCTION BornBefore
+ (
+ @YearAfter AS DATETIME,
+ @YearBefore AS DATETIME
+ )
+RETURNS TABLE
+AS
+RETURN
+		SELECT * FROM student
+		WHERE DOB BETWEEN @YearAfter AND @YearBefore
