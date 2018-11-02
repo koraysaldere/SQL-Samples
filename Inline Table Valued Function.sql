@@ -12,3 +12,12 @@ Select * From
 )
 as tablename
 
+-- get Func
+
+Select * dbo.GetClients
+
+(
+    '','','','',''
+
+)
+
